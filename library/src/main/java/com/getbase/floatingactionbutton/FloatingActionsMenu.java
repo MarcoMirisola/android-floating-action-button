@@ -144,8 +144,14 @@ public class FloatingActionsMenu extends ViewGroup {
     }
   }
 
-  public AddFloatingActionButton getAddButton() {
-    return mAddButton;
+  public void setColorNormalResId(int resId) {
+    mAddButtonColorNormal=getColor(resId);
+    mAddButton.setColorNormal(mAddButtonColorNormal);
+  }
+
+  public void setColorPressedResId(int resId) {
+    mAddButtonColorPressed=getColor(resId);
+    mAddButton.setColorPressed(mAddButtonColorPressed);
   }
 
   private void createAddButton(Context context) {

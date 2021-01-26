@@ -144,6 +144,10 @@ public class FloatingActionsMenu extends ViewGroup {
     }
   }
 
+  public AddFloatingActionButton getAddButton() {
+    return mAddButton;
+  }
+
   private void createAddButton(Context context) {
     mAddButton = new AddFloatingActionButton(context) {
       @Override
